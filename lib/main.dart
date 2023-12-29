@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:managa_app/presentation/view/home_test.dart';
+import 'package:managa_app/core/app.dart';
 
 void main() => runApp(const App());
 
-class App extends StatelessWidget {
-  const App({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Managa",
-      home: MyHomePage(),
+      home: App(),
     );
   }
 }
